@@ -43,7 +43,6 @@ export default {
   diagramNote: "แผนภาพแนวคิดประกอบผลงาน",
   viewImage: "ดูภาพขนาดเต็ม",
   closeImage: "ปิดภาพ",
-  footer: "เรื่องราวของงานที่ผมได้ลงมือทำ",
   back: "กลับไปดูผลงาน",
   next: "ผลงานถัดไป",
   relatedProjects: "ดูผลงานอื่น",

@@ -137,7 +137,6 @@ export function PortfolioLayout({ children }: { children: React.ReactNode }) {
         }}
       >
         <Wordmark />
-        <Typography variant="caption">{t.footer}</Typography>
         <Typography variant="caption">Khampheeraphop Thongsaeng</Typography>
       </Stack>
     </>

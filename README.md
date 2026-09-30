@@ -70,4 +70,32 @@ npx tsc --noEmit
 npm run build
 ```
 
+## Cloudflare deployment
+
+Live website: https://kt-portfolio.khampheeraphop-thon.workers.dev/
+
+For a manual release after signing in with `npx wrangler login`:
+
+```sh
+npm run build
+npm run deploy
+```
+
+To deploy automatically from GitHub, connect `Khampheeraphop/KT-Portfolio` in
+Cloudflare's `kt-portfolio` Worker under **Settings → Builds**:
+
+- Production branch: `main`.
+- Root directory: `/`.
+- Build command: `npm run build`.
+- Deploy command: `npm run deploy`.
+- Preview branch deploy command: `npm run deploy:preview`.
+- Enable builds for non-production branches to create preview URLs.
+- Set the build environment variable `NODE_VERSION` to `22.14.0` or newer.
+
+The Cloudflare GitHub App needs access to this repository. This connection must
+be completed in the account dashboard before pushes can trigger deployments.
+Worker configuration is in `wrangler.jsonc`; the Vite build produces the deployment
+configuration in `dist/server/wrangler.json`. No deployment credentials belong in
+the repository.
+
 Only the supplied experience is represented. Employment dates, graduation year, photographs and contact handles have not been invented.

@@ -45,7 +45,6 @@ const en: Record<keyof typeof th, string> = {
   diagramNote: "Conceptual project diagram",
   viewImage: "View full image",
   closeImage: "Close image",
-  footer: "A collection of the work I’ve helped bring to life.",
   back: "Back to work",
   next: "Next project",
   relatedProjects: "Explore more projects",

@@ -10,7 +10,7 @@ const en: ExperienceCopy = {
     "Developed web applications with the team using TypeScript, React, Node.js, and MongoDB as the core stack, with MUI (Material UI) for interface components and styling. Worked across user interfaces, backend functionality, and application data.",
   internshipHighlights: [
     "Built prototypes to demonstrate proposed functionality to clients, including form-building and data-import tools.",
-    "Developed production features such as activities, digital certificates, and administrative screens.",
+    "Contributed to developing and delivering client systems with the team, including NSM E-Portfolio, Siriraj Event, and Siriraj Give Phase 2, through feature development and fixes for production use.",
     "Contributed to shared services for forms, document workflows, points, and asset information.",
     "Collaborated on bug fixes, contributing to more than 100 resolved cases in each of the event and appreciation gift projects.",
   ],
