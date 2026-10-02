@@ -81,8 +81,9 @@ npm run build
 npm run deploy
 ```
 
-To deploy automatically from GitHub, connect `Khampheeraphop/KT-Portfolio` in
-Cloudflare's `kt-portfolio` Worker under **Settings → Builds**:
+`Khampheeraphop/KT-Portfolio` is connected to Cloudflare's `kt-portfolio` Worker
+under **Settings → Builds**. Pushes to `main` deploy production; pushes to other
+branches upload preview versions. The configured settings are:
 
 - Production branch: `main`.
 - Root directory: `/`.
@@ -92,8 +93,8 @@ Cloudflare's `kt-portfolio` Worker under **Settings → Builds**:
 - Enable builds for non-production branches to create preview URLs.
 - Set the build environment variable `NODE_VERSION` to `22.14.0` or newer.
 
-The Cloudflare GitHub App needs access to this repository. This connection must
-be completed in the account dashboard before pushes can trigger deployments.
+The Cloudflare GitHub App has access to this repository. Deployment credentials
+are managed by Cloudflare Workers Builds.
 Worker configuration is in `wrangler.jsonc`; the Vite build produces the deployment
 configuration in `dist/server/wrangler.json`. No deployment credentials belong in
 the repository.

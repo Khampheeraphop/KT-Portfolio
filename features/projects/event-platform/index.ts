@@ -9,7 +9,7 @@ const project: Project = {
     category: "production",
     featured: true,
     nodes: ["EVENT", "APPLICATION", "SUPPORT"],
-    tags: ["Production", "Bug fixing", "Teamwork"],
+    tags: ["Frontend", "Backend", "Socket", "Production", "Bug fixing"],
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
   description: { th: th.description, en: en.description },

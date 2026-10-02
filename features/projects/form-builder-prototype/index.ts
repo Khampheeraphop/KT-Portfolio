@@ -8,7 +8,7 @@ const project: Project = {
     category: "poc",
     featured: false,
     nodes: ["LAYOUT", "FORM BUILDER", "PDF"],
-    tags: ["Frontend", "Backend", "Database"],
+    tags: ["Frontend", "Backend", "Database", "PoC"],
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
   description: { th: th.description, en: en.description },

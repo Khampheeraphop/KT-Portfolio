@@ -1,7 +1,7 @@
 export default {
   subtitle: "Shared asset and inventory records",
   description:
-    "A shared service for asset and inventory information, covering items, spare parts, expiration dates, and asset numbering formats. Related applications can use this common set of records.",
+    "A microservice for equipment, materials, and inventory records, covering items, spare parts, expiration dates, and asset numbering formats. The domain involves fiscal years and calendar years, with tokens allowing other applications to access the service and share its records.",
   contribution:
-    "Contributed to frontend and backend functionality for asset and inventory records, including items, spare parts, expiration dates, and asset numbering formats.",
+    "Contributed to frontend and backend development with the team, working on equipment and material records, asset numbering formats, a playground for trying the service, and tokens for integration with other applications.\n\nEquipment and material records: Developed functionality for adding equipment, materials, and related information, connecting the interfaces with backend functionality to store records in the shared service.\n\nAsset numbering: Contributed to asset number formatting according to the application's requirements, supporting the identification and management of equipment records.\n\nDomain knowledge: Learned the distinction between fiscal years and calendar years and how these concepts relate to equipment and material management.\n\nPlayground and inventory testing: Developed a playground for trying service calls and testing inventory operations, such as stock deductions, through an interface connected to the actual service functionality.\n\nApplication integration: Developed tokens that other applications use to call Asset Management Service, enabling equipment and material data to be used across systems.",
 };

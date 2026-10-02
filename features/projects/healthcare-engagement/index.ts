@@ -8,7 +8,7 @@ const project: Project = {
     category: "production",
     featured: false,
     nodes: ["QR / FORMS", "SURVEYS", "REWARDS"],
-    tags: ["Healthcare", "Surveys", "Rewards"],
+    tags: ["Frontend", "Backend", "LINE LIFF", "Rich Menu", "Messaging API", "Redis", "Cron Job", "Production"],
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
   description: { th: th.description, en: en.description },

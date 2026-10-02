@@ -8,7 +8,7 @@ const project: Project = {
     category: "service",
     featured: false,
     nodes: ["ASSETS", "INVENTORY", "LIFECYCLE"],
-    tags: ["Microservice", "Inventory", "Assets"],
+    tags: ["Frontend", "Backend", "Microservice", "Inventory", "Assets", "Token"],
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
   description: { th: th.description, en: en.description },

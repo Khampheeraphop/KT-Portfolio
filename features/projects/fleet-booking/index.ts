@@ -8,7 +8,7 @@ const project: Project = {
     category: "production",
     featured: false,
     nodes: ["BOOKING", "ALLOCATION", "PERMISSIONS"],
-    tags: ["Workflow", "Roles", "Internal system"],
+    tags: ["Frontend", "Backend", "Sprint", "Role & Permission", "Notifications", "Excel", "Cron Job"],
   },
   localizedTitle: { th: "ระบบจองรถ", en: "Vehicle Booking System" },
   subtitle: { th: th.subtitle, en: en.subtitle },

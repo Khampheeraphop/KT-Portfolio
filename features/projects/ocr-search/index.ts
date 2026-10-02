@@ -8,7 +8,7 @@ const project: Project = {
     category: "poc",
     featured: false,
     nodes: ["DOCUMENTS", "OCR", "SEARCH"],
-    tags: ["Python", "TypeScript", "Elasticsearch"],
+    tags: ["Python", "TypeScript", "Tesseract OCR", "Elasticsearch", "Fuzzy Match"],
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
   description: { th: th.description, en: en.description },

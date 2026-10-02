@@ -8,7 +8,7 @@ const project: Project = {
     category: "production",
     featured: false,
     nodes: ["REQUEST", "WORKFLOW", "ROLES"],
-    tags: ["Workflow", "Roles", "Internal system"],
+    tags: ["Frontend", "Backend", "Sprint", "Workflow", "Role & Permission", "Notifications", "Testing"],
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
   description: { th: th.description, en: en.description },

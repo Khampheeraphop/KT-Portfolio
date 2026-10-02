@@ -1,7 +1,7 @@
 export default {
   subtitle: "A shared points and rewards service",
   description:
-    "A shared microservice for points and reward redemption. Other applications connect to the service to use its redemption functionality, keeping this capability available across multiple systems.",
+    "A points and rewards microservice shared across applications. It supports activities with configurable point values, reward creation, redemption, point deductions, and point refunds. Administrator and user screens are supported by application authentication using Basic Auth, application keys, and tokens, with PostgreSQL as the service database.",
   contribution:
-    "Contributed to the shared service and related frontend and backend functionality for points redemption, rewards, and integration with other applications.",
+    "Developed frontend and backend functionality for points and rewards across administrator and user screens. Also designed the PostgreSQL database and implemented stored procedures and functions.\n\nDatabase and backend logic: Designed the service's database structure and wrote stored procedures and functions to support points and reward operations.\n\nInterfaces and activities: Built the sign-in page, administrator screens, and user interfaces, along with activity creation and configuration of the points awarded for each activity.\n\nApplication integration: Implemented Basic Auth authentication and key creation for each connected application, issuing tokens that applications use to call the points service.\n\nPoints and rewards: Developed reward creation and point-based redemption, including point deductions and refunds. Connected the interfaces, backend, and database so other applications could use these capabilities through the microservice.",
 };

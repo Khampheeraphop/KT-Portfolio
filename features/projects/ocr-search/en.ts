@@ -1,7 +1,7 @@
 export default {
-  subtitle: "Document text processing",
+  subtitle: "Document content search with OCR and fuzzy matching",
   description:
-    "A document-processing project using Tesseract OCR to turn text in images or documents into data that software can use. Python and TypeScript support the processing work, with Elasticsearch used to store the resulting information.",
+    "A document processing and content search system supporting Thai and English. Users upload documents through the web interface; Python and Tesseract OCR extract the text, which is stored in Elasticsearch for content search. The system supports keyword searches and fuzzy matching for similar terms, with highlighted text and references to the relevant documents in the results.",
   contribution:
-    "Wrote processing code in Python and TypeScript and worked with Elasticsearch to store the OCR output, connecting text extraction with data storage.",
+    "Developed frontend and backend functionality for the project, using Python, TypeScript, and Elasticsearch. Connected the complete workflow from document upload and text extraction to storage, search, and results displayed on the web.\n\nDocument ingestion and processing: Built the upload interface and backend for receiving documents. Integrated OCR processing with Python and Tesseract, then stored and indexed the extracted text in Elasticsearch for search.\n\nSearch: Implemented keyword search and fuzzy matching to support terms similar to the text in the documents, in both Thai and English.\n\nResults: Built the search interface and results display, highlighting matching words or passages and identifying their source documents so users can find relevant documents and see the matching text directly in the results.",
 };

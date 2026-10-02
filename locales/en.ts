@@ -11,7 +11,7 @@ const en: Record<keyof typeof th, string> = {
   explore: "Explore my work",
   resume: "Résumé · Coming soon",
   experience: "Internship experience",
-  duration: "About 2 years, 4 months",
+  duration: "2 years, 4 months",
   internshipPeriod: "Internship period",
   plannedDuration: "Planned internship duration",
   plannedEnd: "Expected completion",

@@ -15,6 +15,7 @@ export const stack = [
   "MUI (Material UI)",
   "Node.js",
   "MongoDB",
+  "PostgreSQL",
   "GitLab",
   "Harbor",
   "Jenkins",

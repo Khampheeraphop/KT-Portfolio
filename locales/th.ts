@@ -10,7 +10,7 @@ export default {
   explore: "สำรวจผลงาน",
   resume: "เรซูเม่ · กำลังจัดเตรียม",
   experience: "ประสบการณ์ฝึกงาน",
-  duration: "ประมาณ 2 ปี 4 เดือน",
+  duration: "2 ปี 4 เดือน",
   internshipPeriod: "ช่วงฝึกงาน",
   plannedDuration: "ระยะฝึกงานตามกำหนด",
   plannedEnd: "กำหนดสิ้นสุด",

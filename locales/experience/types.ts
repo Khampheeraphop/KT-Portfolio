@@ -9,7 +9,11 @@ export interface ExperienceCopy {
     frontend: { title: string; description: string };
     backend: { title: string; description: string };
     services: { title: string; description: string };
+    workflows: { title: string; description: string };
+    integrations: { title: string; description: string };
+    search: { title: string; description: string };
     production: { title: string; description: string };
+    collaboration: { title: string; description: string };
   };
   toolGroups: {
     frontend: string;

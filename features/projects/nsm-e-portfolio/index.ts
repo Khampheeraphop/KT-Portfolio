@@ -9,7 +9,7 @@ const project: Project = {
     category: "production",
     featured: true,
     nodes: ["ACTIVITIES", "CERTIFICATES", "PORTFOLIO"],
-    tags: ["Frontend", "Backend", "Production"],
+    tags: ["Frontend", "Backend", "Testing", "Production"],
     url: "https://e-portfolio.nsm.or.th/",
   },
   subtitle: { th: th.subtitle, en: en.subtitle },
