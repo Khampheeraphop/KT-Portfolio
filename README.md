@@ -48,6 +48,8 @@ Page compositions live inside their feature's `pages/` folder so they are not ac
 - Project description: edit that project's `th.ts` and `en.ts`.
 - Project screenshot: keep it in the project's `assets/` folder and configure `image` in its `index.ts`. Shared `ProjectVisual` renders it in featured work, related cards and details, with a full image dialog on details.
 - Add a project: create its own directory, export a `Project`, and import it in `registry.ts`.
+- Project categories: `projectCategories` in `features/projects/types.ts` supplies the archive filters. Personal projects are separate from internship work.
+- Live site and source repositories: configure `url` and optional `repositories` on the project; shared `ProjectLinks` renders the actions.
 - Colors, fonts and motion duration: `theme/tokens.ts`.
 - MUI palette, typography, component defaults and global baseline: `theme/createPortfolioTheme.ts`.
 - Component layouts and responsive styling: MUI `sx` and `styled` at the component.
@@ -55,7 +57,7 @@ Page compositions live inside their feature's `pages/` folder so they are not ac
 
 Email, GitHub and LinkedIn are configured in `constants/profile.ts`. The résumé URL remains `null` until supplied and renders as unavailable text. Project diagrams are conceptual illustrations, not screenshots of client systems. Internal projects use descriptive names; Siriraj Event and Siriraj Give Phase 2 use their public names.
 
-User-supplied screenshots are included for NSM E-Portfolio, Siriraj Event and Siriraj Give Phase 2. Other projects keep their conceptual diagrams. Related projects choose three distinct items, excluding the current project, on the server so rendering stays consistent. The Vite dependency cache uses `node_modules/.vite-mui` to keep transforms separate from the earlier UI dependencies.
+User-supplied screenshots are included for NSM E-Portfolio, Siriraj Event and Siriraj Give Phase 2. Sugarcane Care includes a screenshot of its public application and bilingual content under `features/projects/sugarcane-care/`; it is presented as a personal screening prototype with explicit model limitations. Other projects keep their conceptual diagrams. Related projects choose three distinct items, excluding the current project, on the server so rendering stays consistent. The Vite dependency cache uses `node_modules/.vite-mui` to keep transforms separate from the earlier UI dependencies.
 
 ## UI architecture
 

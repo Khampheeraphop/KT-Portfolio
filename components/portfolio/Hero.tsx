@@ -13,7 +13,7 @@ export function Hero() {
     <Box
       component="section"
       id="home"
-      sx={{ px: "5%", pt: 3.5, overflow: "hidden", background: theme => theme.palette.mode === "light" ? "radial-gradient(ellipse at 90% 20%, #bcd8f7 0%, transparent 60%), linear-gradient(130deg, #e5edf6, #d4e3f6)" : "radial-gradient(ellipse at 90% 20%, #234767 0%, transparent 60%)" }}
+      sx={{ px: "5%", pt: 3.5, overflow: "hidden", background: theme => theme.palette.mode === "light" ? "radial-gradient(ellipse at 90% 20%, #d9e7f8 0%, transparent 60%), linear-gradient(130deg, #f3f7fc, #e5eef9)" : "radial-gradient(ellipse at 90% 20%, #234767 0%, transparent 60%)" }}
     >
       <Stack
         direction="row"
@@ -92,11 +92,11 @@ export function Hero() {
             useFlexGap
             sx={{ mt: 4, alignItems: "center", flexWrap: "wrap", gap: 3 }}
           >
-            <Button href="#about" variant="contained">
-              {content.about}
-            </Button>
-            <Link href="#work" variant="body2">
+            <Button href="#work" variant="contained">
               {t.explore}
+            </Button>
+            <Link href="#about" variant="body2">
+              {content.about}
             </Link>
           </Stack>
         </Box>

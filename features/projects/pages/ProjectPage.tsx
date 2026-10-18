@@ -1,8 +1,9 @@
 "use client";
 import NextLink from "next/link";
-import { Box, Button, Chip, Link, Paper, Typography } from "@mui/material";
+import { Box, Chip, Link, Paper, Typography } from "@mui/material";
 import type { Project } from "@/features/projects/types";
 import { ProjectVisual } from "@/features/projects/components/ProjectVisual";
+import { ProjectLinks } from "@/features/projects/components/ProjectLinks";
 import { RelatedProjects } from "@/features/projects/components/RelatedProjects";
 import { ProjectTags } from "@/components/shared/ProjectTags";
 import { Reveal } from "@/components/shared/Reveal";
@@ -158,16 +159,7 @@ export function ProjectPage({
               <Box sx={{ my: 3 }}>
                 <ProjectTags tags={project.tags} />
               </Box>
-              {project.url && (
-                <Button
-                  variant="contained"
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t.visit}
-                </Button>
-              )}
+              <ProjectLinks project={project} />
             </Paper>
           </Reveal>
         </Box>

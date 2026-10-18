@@ -13,6 +13,7 @@ import { formatIndex } from "@/utils/format";
 import { getProjectTitle } from "@/utils/project";
 export function SelectedWork() {
   const { locale, t } = useLocale();
+  const featuredProjects = projects.filter((project) => project.featured);
   return (
     <Section id="work">
       <SectionLabel number="02">{t.selected}</SectionLabel>
@@ -26,9 +27,12 @@ export function SelectedWork() {
           gap: "50px 30px",
         }}
       >
-        {projects
-          .filter((p) => p.featured)
-          .map((p, i) => (
+        {featuredProjects.map((p, i) => {
+          const wide =
+            i === 0 ||
+            (featuredProjects.length % 2 === 0 &&
+              i === featuredProjects.length - 1);
+          return (
             <Link
               component={NextLink}
               href={routes.project(p.id)}
@@ -36,16 +40,17 @@ export function SelectedWork() {
               underline="none"
               sx={{
                 display: "grid",
-                gridColumn: i === 0 ? "1 / -1" : undefined,
-                gridTemplateColumns:
-                  i === 0 ? { xs: "1fr", md: "1.4fr 1fr" } : "1fr",
+                gridColumn: wide ? "1 / -1" : undefined,
+                gridTemplateColumns: wide
+                  ? { xs: "1fr", md: "1.4fr 1fr" }
+                  : "1fr",
                 columnGap: "5%",
                 alignItems: "center",
                 "&:hover .MuiSvgIcon-root": { transform: "rotate(90deg)" },
                 "& .MuiSvgIcon-root": { transition: "transform .3s" },
               }}
             >
-              <ProjectVisual project={p} large={i === 0} />
+              <ProjectVisual project={p} large={wide} />
               <Box>
                 <Stack
                   direction="row"
@@ -80,7 +85,8 @@ export function SelectedWork() {
                 <ProjectTags tags={p.tags} />
               </Box>
             </Link>
-          ))}
+          );
+        })}
       </Box>
     </Section>
   );

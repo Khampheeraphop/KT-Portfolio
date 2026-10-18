@@ -7,7 +7,7 @@ export const designTokens = {
       background: "#e5edf6",
       paper: "#eff4fa",
       text: "#122b43",
-      secondaryText: "#526779",
+      secondaryText: "#43586b",
       primary: "#075ad9",
       primaryText: "#ffffff",
       divider: "#b8cce2",

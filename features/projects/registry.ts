@@ -11,7 +11,9 @@ import project9 from "./points-service";
 import project10 from "./healthcare-engagement";
 import project11 from "./asset-service";
 import project12 from "./maintenance-management";
+import sugarcaneCare from "./sugarcane-care";
 export const projects = [
+  sugarcaneCare,
   project0,
   project1,
   project2,

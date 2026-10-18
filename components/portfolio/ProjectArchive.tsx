@@ -12,7 +12,10 @@ import {
 import Add from "@mui/icons-material/Add";
 import { useLocale } from "@/locales/LocaleProvider";
 import { projects } from "@/features/projects/registry";
-import type { ProjectCategory } from "@/features/projects/types";
+import {
+  projectCategories,
+  type ProjectCategory,
+} from "@/features/projects/types";
 import { routes } from "@/constants/routes";
 import { formatIndex } from "@/utils/format";
 import { getProjectTitle } from "@/utils/project";
@@ -69,7 +72,7 @@ export function ProjectArchive() {
           },
         }}
       >
-        {(["all", "production", "service", "poc"] as const).map((c) => (
+        {(["all", ...projectCategories] as const).map((c) => (
           <ToggleButton key={c} value={c}>
             {t[c]}
             <Typography component="span" variant="caption">
