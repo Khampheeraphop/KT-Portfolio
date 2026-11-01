@@ -7,7 +7,10 @@ export const profile = {
     startDate: "2024-11-01",
     endDate: "2027-02-28",
   },
-  resumeUrl: null as string | null,
+  resumeUrls: {
+    th: "/resume/Khampheeraphop-Thongsaeng-Resume-TH.pdf",
+    en: "/resume/Khampheeraphop-Thongsaeng-Resume-EN.pdf",
+  },
 };
 export const stack = [
   "TypeScript",

@@ -1,5 +1,6 @@
 "use client";
 import { Box, Button, Link, Stack, Typography } from "@mui/material";
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import { useLocale } from "@/locales/LocaleProvider";
 import { identity } from "@/locales/identity";
 import { profile } from "@/constants/profile";
@@ -139,13 +140,25 @@ export function Hero() {
           </Box>
         ))}
         <Box sx={{ ml: { xs: 0, md: "auto" } }}>
-          {profile.resumeUrl ? (
-            <Link href={profile.resumeUrl}>Résumé</Link>
-          ) : (
-            <Typography variant="body2" color="text.secondary">
-              {t.resume}
-            </Typography>
-          )}
+          <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+            {t.resume}
+          </Typography>
+          <Stack direction="row" useFlexGap sx={{ gap: 1, flexWrap: "wrap" }}>
+            {(["th", "en"] as const).map((language) => (
+              <Button
+                key={language}
+                component="a"
+                href={profile.resumeUrls[language]}
+                download
+                variant={language === locale ? "contained" : "outlined"}
+                size="small"
+                startIcon={<DownloadRoundedIcon />}
+                aria-label={`${t.resume} ${language === "th" ? "ภาษาไทย" : "English"} (PDF)`}
+              >
+                {language === "th" ? "ภาษาไทย" : "English"} · PDF
+              </Button>
+            ))}
+          </Stack>
         </Box>
       </Stack>
     </Box>

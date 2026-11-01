@@ -9,7 +9,7 @@ const en: Record<keyof typeof th, string> = {
   summary:
     "A Full Stack Developer with hands-on experience in production software — from the interfaces people use to the services and data behind them.",
   explore: "Explore my work",
-  resume: "Résumé · Coming soon",
+  resume: "Download résumé",
   experience: "Internship experience",
   duration: "2 years, 4 months",
   internshipPeriod: "Internship period",

@@ -42,7 +42,7 @@ Page compositions live inside their feature's `pages/` folder so they are not ac
 
 ## Content updates
 
-- Profile, contact URLs and résumé URL: `constants/profile.ts`.
+- Profile, contact URLs and bilingual résumé URLs: `constants/profile.ts`. Résumé PDFs are stored in `public/resume/`.
 - Introduction: `locales/identity.ts`.
 - Interface translations: `locales/th.ts` and `locales/en.ts`.
 - Project description: edit that project's `th.ts` and `en.ts`.
@@ -55,7 +55,7 @@ Page compositions live inside their feature's `pages/` folder so they are not ac
 - Component layouts and responsive styling: MUI `sx` and `styled` at the component.
 - Route helpers: `constants/routes.ts`.
 
-Email, GitHub and LinkedIn are configured in `constants/profile.ts`. The résumé URL remains `null` until supplied and renders as unavailable text. Project diagrams are conceptual illustrations, not screenshots of client systems. Internal projects use descriptive names; Siriraj Event and Siriraj Give Phase 2 use their public names.
+Email, GitHub and LinkedIn are configured in `constants/profile.ts`. Thai and English résumé PDFs are available through the download buttons in the hero section. Project diagrams are conceptual illustrations, not screenshots of client systems. Internal projects use descriptive names; Siriraj Event and Siriraj Give Phase 2 use their public names.
 
 User-supplied screenshots are included for NSM E-Portfolio, Siriraj Event and Siriraj Give Phase 2. Sugarcane Care includes a screenshot of its public application and bilingual content under `features/projects/sugarcane-care/`; it is presented as a personal screening prototype with explicit model limitations. Other projects keep their conceptual diagrams. Related projects choose three distinct items, excluding the current project, on the server so rendering stays consistent. The Vite dependency cache uses `node_modules/.vite-mui` to keep transforms separate from the earlier UI dependencies.
 
