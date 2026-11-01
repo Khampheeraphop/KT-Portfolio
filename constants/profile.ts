@@ -1,6 +1,7 @@
 export const profile = {
   name: "Khampheeraphop Thongsaeng",
   nickname: "Phop",
+  portraitUrl: "/images/khampheeraphop-portrait.webp",
   company: "Blueseas Enterprise Co., Ltd.",
   companyUrl: "https://www.blueseas.co.th/",
   internship: {

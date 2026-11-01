@@ -2,8 +2,7 @@
 import { Box, Paper, Stack, Typography } from "@mui/material";
 import { useLocale } from "@/locales/LocaleProvider";
 import { identity } from "@/locales/identity";
-import { float } from "@/theme/motion";
-import { stack } from "@/constants/profile";
+import { profile, stack } from "@/constants/profile";
 import { ProjectTags } from "@/components/shared/ProjectTags";
 export function ProfileSheet() {
   const { locale, t } = useLocale();
@@ -48,38 +47,29 @@ export function ProfileSheet() {
         <Typography variant="caption">01</Typography>
       </Stack>
       <Box
-        aria-hidden="true"
         sx={{
-          position: "relative",
-          fontSize: { xs: "8rem", md: "clamp(6rem, 12vw, 11rem)" },
-          lineHeight: 1.1,
-          letterSpacing: "-.15em",
-          fontWeight: 800,
-          color: "primary.main",
-          py: 2,
+          my: 2.5,
+          aspectRatio: "1 / 1",
+          overflow: "hidden",
+          border: 1,
+          borderColor: "divider",
+          borderRadius: 1.5,
+          bgcolor: "#e4e6e8",
         }}
       >
-        K
         <Box
-          component="span"
+          component="img"
+          src={profile.portraitUrl}
+          alt={`${content.firstName} ${content.lastName}`}
+          width={720}
+          height={960}
+          fetchPriority="high"
           sx={{
-            color: "transparent",
-            WebkitTextStroke: (theme) => "1px " + theme.palette.primary.main,
-          }}
-        >
-          T
-        </Box>
-        <Box
-          sx={{
-            position: "absolute",
-            right: 4,
-            top: 36,
-            width: 60,
-            height: 60,
-            border: 1,
-            borderColor: "divider",
-            borderRadius: "50%",
-            animation: float + " 7s ease-in-out infinite",
+            display: "block",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center top",
           }}
         />
       </Box>
