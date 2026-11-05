@@ -28,8 +28,8 @@ export function Contact() {
             <Link
               key={contact.label}
               href={contact.url}
-              target={contact.url.startsWith("mailto:") ? undefined : "_blank"}
-              rel={contact.url.startsWith("mailto:") ? undefined : "noreferrer"}
+              target={contact.url.startsWith("https://") ? "_blank" : undefined}
+              rel={contact.url.startsWith("https://") ? "noreferrer" : undefined}
               underline="none"
               sx={{
                 py: 2.25,

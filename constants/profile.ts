@@ -25,9 +25,14 @@ export const stack = [
   "Jenkins",
   "Docker",
 ];
-export type ContactLabel = "Email" | "GitHub" | "LinkedIn";
+export type ContactLabel = "Phone" | "Email" | "GitHub" | "LinkedIn" | "Facebook";
 export const contacts: { label: ContactLabel; url: string; display: string }[] =
   [
+    {
+      label: "Phone",
+      url: "tel:0838533191",
+      display: "0838533191",
+    },
     {
       label: "Email",
       url: "mailto:khampheeraphop.thon@gmail.com",
@@ -41,6 +46,11 @@ export const contacts: { label: ContactLabel; url: string; display: string }[] =
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/khampheeraphop-thongsaeng-547a1643b/",
+      display: "Khampheeraphop Thongsaeng",
+    },
+    {
+      label: "Facebook",
+      url: "https://www.facebook.com/khampheeraphop.thongsaeng",
       display: "Khampheeraphop Thongsaeng",
     },
   ];
